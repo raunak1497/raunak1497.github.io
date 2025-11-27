@@ -46,19 +46,29 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle: "Full Stack Software Engineer Focused on Scalable Systems & Exceptional User Experiences",
+  subTitle:
+    "Full Stack Software Engineer Focused on Scalable Systems & Exceptional User Experiences",
   skills: [
-    emoji("⚡ Build high-performance, responsive user interfaces using React, Next.js, and TypeScript"),
-    emoji("⚡ Design and develop scalable backend services, APIs, and distributed systems"),
-    emoji("⚡ Implement real-time features, data pipelines, and integrations across cloud platforms (AWS,GCP)"),
-    emoji("⚡ Optimize application performance, reliability, and end-to-end user experience"),
-    emoji("⚡ Collaborate across product, design, and engineering to ship impactful features quickly")
+    emoji(
+      "⚡ Build high-performance, responsive user interfaces using React, Next.js, and TypeScript"
+    ),
+    emoji(
+      "⚡ Design and develop scalable backend services, APIs, and distributed systems"
+    ),
+    emoji(
+      "⚡ Implement real-time features, data pipelines, and integrations across cloud platforms (AWS,GCP)"
+    ),
+    emoji(
+      "⚡ Optimize application performance, reliability, and end-to-end user experience"
+    ),
+    emoji(
+      "⚡ Collaborate across product, design, and engineering to ship impactful features quickly"
+    )
   ],
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
@@ -118,7 +128,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -127,14 +137,13 @@ https://fontawesome.com/icons?d=gallery */
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
-    schools: [
+  schools: [
     {
       schoolName: "University of Illinois Chicago",
       logo: require("./assets/images/UIClogo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "January 2024 - December 2025",
-      desc:
-        "My academic focus spans distributed systems, scalable backend architecture, database implementations, concurrent programming, and designing intuitive human-centered user interfaces.",
+      desc: "My academic focus spans distributed systems, scalable backend architecture, database implementations, concurrent programming, and designing intuitive human-centered user interfaces.",
       descBullets: [
         "Courses: Artificial Intelligence, Distributed Systems in Cloud Computing, Advanced Database Systems, Concurrent Programming, Human Computer Interaction, Machine Learning, and Data Science"
       ]
@@ -145,7 +154,9 @@ const educationInfo = {
       subHeader: "Bachelor of Technology in Computer Science and Engineering",
       duration: "July 2017 - May 2021",
       desc: `My bachelor’s project focused on Blockchain and Computer Security, where I contributed under Dr. Vinod Pathari. Leveraging the Ethereum blockchain, I explored secure implementations for decentralized applications and exploring various aspects of blockchain technology and its security applications.`,
-      descBullets: ["Relevant Coursework: Data Structures and Algorithms, Operating System(OS), Database Management System (DBMS), Application Security, Computer  Graphics, Compiler Design, Computational Geometry, Computer Networks",]
+      descBullets: [
+        "Relevant Coursework: Data Structures and Algorithms, Operating System(OS), Database Management System (DBMS), Application Security, Computer  Graphics, Compiler Design, Computational Geometry, Computer Networks"
+      ]
     }
   ]
 };
@@ -156,7 +167,8 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Programming Languages : JavaScript, TypeScript, Java, Python, C++",
+      Stack:
+        "Programming Languages : JavaScript, TypeScript, Java, Python, C++",
       progressPercentage: "75%"
     },
     {
@@ -174,7 +186,7 @@ const techStack = {
     {
       Stack: "Cloud & DevOps (AWS, GCP, Docker, CI/CD)",
       progressPercentage: "75%"
-    },
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -204,7 +216,7 @@ const workExperiences = {
       companylogo: require("./assets/images/cisco.png"),
       date: "Jun 2020 – July 2020",
       desc: "As a software Engineer Intern , I built an internal tool to track task status across teams a collaborative task dashboard developed using React/Next.js and a Node.js backend. I implemented JWT authentication, role-based access control, and drag-and-drop workflows, delivering a secure, accessible, and optimized UI that streamlined team productivity and task visibility."
-    }  
+    }
   ]
 };
 
@@ -225,7 +237,8 @@ const bigProjects = {
     {
       image: require("./assets/images/llm.jpeg"),
       projectName: "Distributed Large LanguageModel",
-      projectDesc: "Designed and developed a large language model (LLM) from scratch, leveraging distributed cloud computations to optimize data processing, vector embeddings, scalability, and performance. Implemented a cloud-based Map/Reduce architecture on AWS EMR and deployed generative LLM systems using Amazon Bedrock, Lambda functions, and Spark for efficient neural network training. Utilized Scala with the ScalaTest framework to create testable, scalable applications, adhering to functional programming principles and best practices in cloud computing and parallelism.",
+      projectDesc:
+        "Designed and developed a large language model (LLM) from scratch, leveraging distributed cloud computations to optimize data processing, vector embeddings, scalability, and performance. Implemented a cloud-based Map/Reduce architecture on AWS EMR and deployed generative LLM systems using Amazon Bedrock, Lambda functions, and Spark for efficient neural network training. Utilized Scala with the ScalaTest framework to create testable, scalable applications, adhering to functional programming principles and best practices in cloud computing and parallelism.",
       footerLink: [
         {
           name: "Visit Github",
@@ -249,7 +262,8 @@ const bigProjects = {
     {
       image: require("./assets/images/authetify.png"),
       projectName: "Authetify",
-      projectDesc: "Developed a lightweight, user-friendly decentralized application (Dapp) using Flutter to monitor and track counterfeit food products across the supply chain. Integrated RFID technology to streamline scanning processes and detect counterfeit products at various stages of the supply chain, ensuring greater transparency and product authenticity.",
+      projectDesc:
+        "Developed a lightweight, user-friendly decentralized application (Dapp) using Flutter to monitor and track counterfeit food products across the supply chain. Integrated RFID technology to streamline scanning processes and detect counterfeit products at various stages of the supply chain, ensuring greater transparency and product authenticity.",
       footerLink: [
         {
           name: "Visit Github",
@@ -261,7 +275,8 @@ const bigProjects = {
     {
       image: require("./assets/images/expos.png"),
       projectName: "EXPOS",
-      projectDesc: "Designed and implemented a miniature operating system from scratch using Expl, incorporating fundamental OS features and components. Developed critical modules such as I/O management, scheduling, memory management, and linking, enabling efficient and reliable system functionality. ",
+      projectDesc:
+        "Designed and implemented a miniature operating system from scratch using Expl, incorporating fundamental OS features and components. Developed critical modules such as I/O management, scheduling, memory management, and linking, enabling efficient and reliable system functionality. ",
       footerLink: [
         {
           name: "Visit Github",
@@ -355,7 +370,6 @@ const aiMlProjects = {
   display: true
 };
 
-
 // Achievement Section
 // Include certificates, talks etc
 
@@ -367,8 +381,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Associate Cloud Engineer",
-      subtitle:
-        "Google Cloud certified.",
+      subtitle: "Google Cloud certified.",
       image: require("./assets/images/googleCloud.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -379,17 +392,16 @@ const achievementSection = {
         {
           name: "Verify Badge",
           url: "https://www.credly.com/badges/daa59cab-2e41-4526-a17f-bc1fd7f7fcfc/public_url"
-        },
+        }
       ]
     },
     {
       title: "IIT JEE 2017",
-      subtitle: "Qualified the IIT JEE main and advanced with a 99.7 percentile among 1.3 million candidates",
+      subtitle:
+        "Qualified the IIT JEE main and advanced with a 99.7 percentile among 1.3 million candidates",
       image: require("./assets/images/IIT.png"),
       imageAlt: "IIT JEE",
-      footerLink: [
-        
-      ]
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true

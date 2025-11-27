@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "../StartupProjects/StartupProjects.scss";
-import { minorProjects } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {minorProjects} from "../../portfolio";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function MinorProjects() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   function openUrlInNewTab(url) {
     if (!url) return;
@@ -18,7 +18,11 @@ export default function MinorProjects() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="minor-projects">
         <h1 className="skills-heading">{minorProjects.title}</h1>
-        <p className={isDark ? "dark-mode project-subtitle" : "subTitle project-subtitle"}>
+        <p
+          className={
+            isDark ? "dark-mode project-subtitle" : "subTitle project-subtitle"
+          }
+        >
           {minorProjects.subtitle}
         </p>
 
@@ -37,7 +41,11 @@ export default function MinorProjects() {
                   {project.projectName}
                 </h5>
 
-                <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
+                <p
+                  className={
+                    isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                  }
+                >
                   {project.projectDesc}
                 </p>
 
@@ -45,7 +53,9 @@ export default function MinorProjects() {
                   {project.footerLink?.map((link, idx) => (
                     <span
                       key={idx}
-                      className={isDark ? "dark-mode project-tag" : "project-tag"}
+                      className={
+                        isDark ? "dark-mode project-tag" : "project-tag"
+                      }
                       onClick={() => openUrlInNewTab(link.url)}
                     >
                       {link.name}
