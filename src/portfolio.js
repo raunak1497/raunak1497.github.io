@@ -26,7 +26,7 @@ const greeting = {
     "I’m a full-stack engineer passionate about building scalable backend systems and intuitive, high-performance interfaces. I enjoy designing distributed architectures and creating products that solve real problems end-to-end."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/17LC2gVsOmlqJ5cb96adPNtVgbJlu4EyDHGsaoraKUqQ/edit?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1dfTXQyPIpSPS0IISQ_RHnN9Rm1nsF3_GXPpsuYgiMB0/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -242,7 +242,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Github",
-          url: "https://github.com/raunak1497/distributed-LLM.git/main"
+          url: "https://github.com/raunak1497/distributed-LLM"
         }
         //  you can add extra buttons here.
       ]
@@ -321,7 +321,7 @@ const minorProjects = {
       footerLink: [
         {
           name: "Visit Github",
-          url: "https://github.com/raunak1497/Your-Repo-Name" // replace with actual link
+          url: "https://github.com/raunak1497/tourBus-ticket-manager" // replace with actual link
         }
       ]
     }
